@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/iv_hot_news"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:background="#FFF"
+         />
+
+    <TextView
+        android:id="@+id/tv_hot_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_hot_news"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:text="这是标题。。。。。。"
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+    <TextView 
+        android:id="@+id/tv_hot_content"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/iv_hot_news"
+        android:layout_below="@id/tv_hot_title"
+        android:textSize="12dp"
+        android:maxLines="3"
+        android:textColor="#8D857A"
+        android:text="自本月5日会见来访的意大利总理伦齐后,便未再公开露面。11日,俄发布俄罗斯、哈萨克斯坦、"/>
+    
+    <TextView
+        android:id="@+id/tv_resource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hot_content"
+        android:layout_toRightOf="@id/iv_hot_news"
+        android:singleLine="true"
+        android:text="来源：金融头条"
+        android:textColor="#B2AA85"
+        android:textSize="10sp" />
+
+    <!-- <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hot_content"
+        android:layout_toRightOf="@id/tv_resource"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:text="3555评论"
+        android:textColor="#B2AA85"
+        android:textSize="10sp" /> -->
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_hot_content"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:text="2016.02.18 12:15"
+        android:textColor="#B2AA85"
+        android:textSize="10sp" />
+
+    
+    
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android">
+<shape 
+    android:shape="ring"
+    android:thickness="3dp"
+    android:innerRadius="20dp"
+>
+    <size
+        android:height="40dp"
+        android:width="40dp"
+         />
+
+   <solid android:color="#F00"/>
+
+</shape>
+</bitmap>

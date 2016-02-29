@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#FFF"
+    >
+
+    <com.example.fastNews.Utils.PagerSlidingTabStrip
+        android:id="@+id/tabs_read"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#FFF"
+       android:layout_gravity="center"
+        android:textColor="#37362F"
+        android:textSize="16sp"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="#E3F2F5"
+        app:pstsIndicatorHeight="32dp"
+        app:pstsScaleZoomMax="0"
+        app:pstsShouldExpand="false"
+        app:pstsTextSelectedColor="#5BC3FE"
+        app:pstsUnderlineColor="@null"
+        app:pstsUnderlineHeight="0dp" >
+    </com.example.fastNews.Utils.PagerSlidingTabStrip>
+
+    <com.example.fastNews.viewGroup.noScrollViewpager2
+        android:id="@+id/vp_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        app:size="9" >
+    </com.example.fastNews.viewGroup.noScrollViewpager2>
+
+</LinearLayout>

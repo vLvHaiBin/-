@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_healthdetail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lines="2"
+        android:padding="5dp"
+        android:text="一些特殊体质的人就不宜常吃粗粮"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_healthdetailinfo_image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/tv_healthdetailinfo_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="警惕！这6类人吃粗粮易使癌细胞疯长 《这是真的么》第23期：一个部位长肉竟是癌症先兆时长：5&apos;5" />
+
+    <TextView
+        android:padding="5dp"
+        android:id="@+id/tv_healthdetailinfo_keywords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关键词：粗粮 人群 健康 吸收 营养素"
+        android:textColor="#834401" />
+
+</LinearLayout>
