@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    
+<ImageView 
+    android:id="@+id/iv_apk_icon"
+    android:layout_height="50dp"
+    android:layout_width="50dp"
+    android:layout_centerVertical="true"
+    android:padding="2dp"/>
+<TextView 
+    android:padding="5dp"
+    android:textSize="20sp"
+    android:id="@+id/tv_apk_name"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="apk名字"
+    android:layout_toRightOf="@id/iv_apk_icon"/>
+
+<TextView 
+    android:padding="5dp"
+    android:id="@+id/tv_apk_location"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="apk位置"
+    android:textColor="#7A7260"
+    android:layout_below="@id/tv_apk_name"
+    android:layout_toRightOf="@id/iv_apk_icon"/>
+
+<TextView 
+    android:layout_marginRight="30dp"
+    android:id="@+id/tv_apk_size"
+    android:textSize="18sp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="apk大小"
+  android:layout_alignParentRight="true"
+  android:layout_centerVertical="true"
+    />
+</RelativeLayout>

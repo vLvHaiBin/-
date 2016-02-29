@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.mobilesafe.ViewGroup.Titlebar
+        android:id="@+id/title_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        setting:title="应用加密" >
+    </com.example.mobilesafe.ViewGroup.Titlebar>
+
+    <com.example.mobilesafe.ViewGroup.SettingRelativeLayout
+        android:id="@+id/sr_app_lock"
+        setting:name="applock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        setting:desc_off="应用加密关闭"
+        setting:desc_on="应用加密开启"
+        setting:title="应用加密" >
+    </com.example.mobilesafe.ViewGroup.SettingRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7DC0DA"
+        android:text="加密应用"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lv_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

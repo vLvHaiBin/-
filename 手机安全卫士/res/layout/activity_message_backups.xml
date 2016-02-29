@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<com.example.mobilesafe.ViewGroup.Titlebar 
+       android:id="@+id/title_message_backups"
+         setting:title="短信备份设置"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+	</com.example.mobilesafe.ViewGroup.Titlebar>
+	
+<RelativeLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:id="@+id/rl_message_backups"
+    >
+    <TextView 
+        android:id="@+id/tv_message_backups"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="短信备份"
+       android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+      />
+    
+    <ImageView 
+        android:id="@+id/iv_message_backups"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/mz_btn_check_button_off_normal_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"/>
+    
+    <TextView 
+         android:paddingLeft="10dp"
+        android:id="@+id/tv_message_backups_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="上次备份时间:2016.2.15.14:03"
+        android:textColor="#141C25"
+   		android:layout_below="@id/tv_message_backups"
+   		android:layout_alignLeft="@id/tv_message_backups"
+      />
+    
+    <View 
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_message_backups"
+        android:layout_height="1dp"
+        android:layout_width="350dp"
+        android:background="@color/itemcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>
+
+	<com.example.mobilesafe.ViewGroup.tiaomuRelativeLayout
+    	 android:id="@+id/tiaomu_message_backups"
+         setting:tiaomu_title="短信备份还原" 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+</com.example.mobilesafe.ViewGroup.tiaomuRelativeLayout>
+
+</LinearLayout>

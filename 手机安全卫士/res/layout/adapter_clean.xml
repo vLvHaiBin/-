@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_clean_adapter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_clean_apk_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/tv_clean_apk_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_clean_apk_icon"
+        android:padding="5dp"
+        android:text="apk名字"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_clean_apk_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_clean_apk_name"
+        android:layout_toRightOf="@id/iv_clean_apk_icon"
+        android:padding="5dp"
+        android:text="运行内存大小"
+        android:textColor="#7A7260" />
+
+</RelativeLayout>

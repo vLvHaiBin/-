@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  	android:paddingLeft="10dp"
+  	android:paddingTop="32dp"
+  	android:paddingBottom="32dp"
+  	android:paddingRight="10dp"
+  	android:background="#FFFFFF"
+    >
+    
+    <ImageView 
+        android:id="@+id/iv_menu_image"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/flow_management"
+        android:layout_centerHorizontal="true"
+        />
+	<TextView 
+	    android:paddingTop="3dp"
+	    android:id="@+id/tv_menu_text"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="流量管理"
+	    android:textSize="12sp"
+	   android:layout_centerHorizontal="true"
+	   android:layout_below="@id/iv_menu_image"
+	  />
+	
+	
+</RelativeLayout>

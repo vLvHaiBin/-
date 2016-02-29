@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilesafe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mobilesafe.activity.splashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.menu_activity" >
+            <intent-filter>
+                <action android:name="menu.activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.settingActivity" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.guard_activity" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.Contact" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.hightools" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.place_query" >
+        </activity>
+        <activity
+            android:name="com.example.mobilesafe.activity.placetoastActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.Activity_Blacklist" >
+        </activity>
+        <activity
+            android:name="com.example.mobilesafe.activity.rocket_activity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.Activity_Message_backups" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.harassintercept" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.Activity_add_black" >
+        </activity>
+        <activity android:name="com.example.mobilesafe.activity.Activity_sw_manage" >
+        </activity>
+        <!-- 程序锁 -->
+        <activity android:name="com.example.mobilesafe.activity.Activity_app_lock"></activity>
+        <!-- 进程管理 -->
+        <activity android:name="com.example.mobilesafe.activity.Activity_app_process" >
+        </activity>
+        <!-- 病毒查杀-->
+        <activity android:name="com.example.mobilesafe.activity.Activity_virus_find"></activity>
+        <activity android:name="com.example.mobilesafe.activity.Activity_lock_app_enter"></activity>
+        <activity android:name="com.example.mobilesafe.activity.Activity_Clean"></activity>
+        <!-- 广播接受者 -->
+        <receiver android:name="com.example.mobilesafe.receiver.Bootcompletereceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.mobilesafe.receiver.Smsreceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!-- 桌面小控件 -->
+        <receiver android:name="com.example.mobilesafe.widght.MyWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_appwidget_info" />
+        </receiver>
+        <!--
+        <receiver android:name="com.example.mobilesafe.receiver.callshowAddressreceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!-- 启动服务 -->
+        <service android:name="com.example.mobilesafe.server.Location" >
+        </service>
+        <service android:name="com.example.mobilesafe.server.AddressServer" >
+        </service>
+        <service android:name="com.example.mobilesafe.server.rocketserver" >
+        </service>
+        <service android:name="com.example.mobilesafe.server.server_show_widget" >
+        </service>
+        <service android:name="com.example.mobilesafe.server.WatchDogService"></service>
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.mobilesafe.ViewGroup.Titlebar
+        android:id="@+id/title_sw_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        setting:title="软件管理" >
+    </com.example.mobilesafe.ViewGroup.Titlebar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B3B2B1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_sw_manage_rom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="可用内存:346M" />
+
+        <TextView
+            android:id="@+id/tv_sw_manage_ram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="可用内存:346M" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sw_manager_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户应用"
+        android:background="#B3B2B1" />
+
+    <ListView
+        android:id="@+id/lv_sw_manage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<com.example.mobilesafe.ViewGroup.Titlebar
+    android:id="@+id/guard_title"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    setting:title="防盗设置"
+    ></com.example.mobilesafe.ViewGroup.Titlebar>
+
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:id="@+id/rl_select_contact"
+    >
+    <TextView 
+        android:id="@+id/tv_select_contact"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="选择联系人"
+       android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"/>
+    
+    <TextView 
+        android:id="@+id/tv_contact_number"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="请选择联系人"
+        android:paddingLeft="10dp"
+        android:textColor="@color/textcolor"
+        android:layout_below="@id/tv_select_contact"
+        android:textSize="14sp"/>
+    
+    <ImageView 
+        android:id="@+id/iv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/mz_btn_check_button_off_normal_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"/>
+    <TextView 
+        android:id="@+id/tv_select_state"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="未选择"
+        android:layout_toLeftOf="@id/iv"
+        android:layout_centerVertical="true"/>
+    <View 
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_contact_number"
+        android:layout_height="1dp"
+        android:layout_width="350dp"
+        android:background="@color/itemcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>
+
+<com.example.mobilesafe.ViewGroup.SettingRelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/sr_guard"
+    setting:title="开启防盗保护"
+     setting:name="guard"
+    setting:desc_on="防盗保护开启"
+    setting:desc_off="防盗保护关闭">
+</com.example.mobilesafe.ViewGroup.SettingRelativeLayout>
+
+</LinearLayout>

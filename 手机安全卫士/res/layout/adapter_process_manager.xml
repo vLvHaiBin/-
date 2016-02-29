@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_process_adapter"
+    >
+    
+<ImageView 
+    android:id="@+id/iv_process_apk_icon"
+    android:layout_height="50dp"
+    android:layout_width="50dp"
+    android:layout_centerVertical="true"
+    android:padding="2dp"/>
+<TextView 
+    android:padding="5dp"
+    android:textSize="17sp"
+    android:id="@+id/tv_process_apk_name"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="apk名字"
+    android:layout_toRightOf="@id/iv_process_apk_icon"/>
+
+<TextView 
+    android:padding="5dp"
+    android:id="@+id/tv_process_apk_size"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="运行内存大小"
+    android:textColor="#7A7260"
+    android:layout_below="@id/tv_process_apk_name"
+    android:layout_toRightOf="@id/iv_process_apk_icon"/>
+
+<ImageView
+    android:layout_marginRight="30dp"
+    android:id="@+id/iv_process_is_check"
+    android:src="@drawable/selector_process_check"
+    android:focusable="false"
+    android:clickable="false"
+    android:layout_height="25dp"
+    android:layout_width="25dp"
+  android:layout_alignParentRight="true"
+  android:layout_centerVertical="true"
+    />
+</RelativeLayout>

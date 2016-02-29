@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--titlebar  -->
+    <com.example.mobilesafe.ViewGroup.Titlebar
+        android:id="@+id/title_high_tools"
+         setting:title="高级工具" 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"></com.example.mobilesafe.ViewGroup.Titlebar>
+    
+    <!--归属地查询  -->
+    <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:id="@+id/rl_place_query"
+    >
+    <TextView 
+        android:id="@+id/tv_query"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="归属地查询"
+       android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"/>
+    
+    <ImageView 
+        
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/mz_btn_check_button_off_normal_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"/>
+    
+    <View 
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_query"
+        android:layout_height="1dp"
+        android:layout_width="350dp"
+        android:background="@color/itemcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>、
+
+<!-- 手机防盗 -->
+ <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:id="@+id/rl_phone_query"
+    >
+    <TextView 
+        android:id="@+id/tv_phone_query"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="手机防盗"
+       android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"/>
+    
+    <ImageView 
+        
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/mz_btn_check_button_off_normal_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"/>
+    
+    <View 
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_phone_query"
+        android:layout_height="1dp"
+        android:layout_width="350dp"
+        android:background="@color/itemcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>
+
+<!-- 短信备份 -->
+ <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:id="@+id/rl_message_backups"
+    >
+<TextView 
+        android:id="@+id/tv_message_backups"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="短信备份设置"
+       android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"/>
+    
+    <ImageView 
+        
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/mz_btn_check_button_off_normal_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"/>
+    
+    <View 
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_message_backups"
+        android:layout_height="1dp"
+        android:layout_width="350dp"
+        android:background="@color/itemcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>
+
+ <!-- 程序锁 -->
+ <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:id="@+id/rl_program_lock"
+    >
+<TextView 
+        android:id="@+id/tv_program_lock"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="程序锁"
+       android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"/>
+    
+    <ImageView 
+        
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/mz_btn_check_button_off_normal_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"/>
+    
+    <View 
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_program_lock"
+        android:layout_height="1dp"
+        android:layout_width="350dp"
+        android:background="@color/itemcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>
+
+ <!-- 归属地提示框位置设置 -->
+ <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+   android:id="@+id/rl_toast_place"
+    >
+<TextView 
+        android:id="@+id/tv_toast_place"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="归属地提示显示位置"
+       android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"/>
+    
+    <ImageView 
+        
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:src="@drawable/mz_btn_check_button_off_normal_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"/>
+    
+    <View 
+        android:layout_centerHorizontal="true"
+		android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_toast_place"
+        android:layout_height="1dp"
+        android:layout_width="350dp"
+        android:background="@color/itemcolor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+</RelativeLayout>
+</LinearLayout>

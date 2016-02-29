@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<com.example.mobilesafe.ViewGroup.Titlebar 
+       android:id="@+id/title_harass_intercept"
+         setting:title="骚扰拦截" 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+	</com.example.mobilesafe.ViewGroup.Titlebar>
+
+	<com.example.mobilesafe.ViewGroup.tiaomuRelativeLayout
+    	 android:id="@+id/tiaomu_blacklist"
+         setting:tiaomu_title="黑名单设置" 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+</com.example.mobilesafe.ViewGroup.tiaomuRelativeLayout>
+
+	<com.example.mobilesafe.ViewGroup.tiaomuRelativeLayout
+    	 android:id="@+id/tiaomu_add_black"
+         setting:tiaomu_title="添加黑名单" 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    
+</LinearLayout>

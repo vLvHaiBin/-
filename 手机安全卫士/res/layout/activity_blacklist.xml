@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:id="@+id/fl_black"
+	    android:visibility="gone">
+	    
+	    <RelativeLayout 
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:id="@+id/rl_black">
+	        <ProgressBar 
+	            android:id="@+id/pb_black"
+	            android:layout_height="60dp"
+	            android:layout_width="60dp"
+	            android:layout_centerInParent="true"
+	            />
+	        <TextView 
+	            android:layout_below="@id/pb_black"
+	            android:id="@+id/tv_add_ing"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="玩命加载中..."
+	            android:layout_centerHorizontal="true"
+	             />
+	    </RelativeLayout>
+	</FrameLayout>
+	
+	<com.example.mobilesafe.ViewGroup.Titlebar 
+       android:id="@+id/title_blacklist"
+         setting:title="黑名单设置" 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+	</com.example.mobilesafe.ViewGroup.Titlebar>
+
+	<ListView 
+	    android:layout_weight="1"
+	    android:id="@+id/lv_blacklist"
+	    android:layout_height="0dp"
+	    android:layout_width="match_parent"></ListView>
+	
+	<LinearLayout
+	   
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	    <Button 
+    	android:onClick="upPage"
+        android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dp"
+	    android:text="上一页"/>
+	    
+	<Button 
+	   android:onClick="nextPage"
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dp"
+	    android:text="下一页"/>
+	
+	<EditText 
+	    android:id="@+id/et_yehsu"
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dp"
+	    android:hint="页数"/>
+	
+	<TextView 
+	    android:id="@+id/tv_black_yeshu"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="1/10"></TextView>
+	    
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:setting="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.example.mobilesafe.ViewGroup.Titlebar 
+        android:id="@+id/title_query_number"
+        android:layout_height="wrap_content"
+          setting:title="归属地查询"
+        android:layout_width="match_parent"></com.example.mobilesafe.ViewGroup.Titlebar>
+<EditText 
+    android:id="@+id/et_input_number"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:hint="请输入要查询的号码"
+    android:padding="10dp"/>
+
+<Button 
+   android:layout_height="wrap_content"
+   android:layout_width="match_parent"
+   android:text="确认"
+   android:onClick="click"
+   />
+<TextView 
+    android:id="@+id/tv_query_result"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="查询结果"
+    android:layout_gravity="center_horizontal"
+    android:textSize="30sp"/>
+
+</LinearLayout>
